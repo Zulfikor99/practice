@@ -17,6 +17,17 @@ git commit -m "BRR:Initial Setup"
 git remote add origin https://github_address
 git push origin main
 git pull origin main
-
-
 ```
+
+## Python Foundations:
+
+- Primitive Variables
+- Functions
+- Objects
+- Class
+- Class Deep dive
+- Operations and Conditions
+- Loops
+
+
+
