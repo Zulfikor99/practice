@@ -32,14 +32,49 @@ print("===== Keyword & default arguments =====")
 
 
 # DEFINE
-def give_greet(name, age=22): # default
+def give_greet(name, age=22):  # default
     print("give_greet is executed")
     return f"Hi {name}, you are {age} years old!"
 
 
 # CALL
-result3 = give_greet(name="Justin", age=28) # keyword
+result3 = give_greet(name="Justin", age=28)  # keyword
 print("result3:", result3)
 
 result4 = give_greet("John")
 print("result4:", result4)
+
+print("===== Scope =====")
+
+b = 100  # 3
+
+# Define
+
+
+def calculate(a, b):  # 2
+    c = a*b  # 1
+    print(f"the value of c: {c}")
+
+
+# Call
+calculate(5, 50)
+
+"""
+def calculate(a, b):
+    c = a*b
+    print(f"the value of c: {c}")
+
+
+# Call
+calculate(5) argumentda yozilmasa b ni tashqaridan oladi.
+
+
+def calculate(a, 80):  bu  holatda parametrdan oladi
+    c = a*b
+    print(f"the value of c: {c}")
+
+
+# Call
+calculate(5)
+
+"""
