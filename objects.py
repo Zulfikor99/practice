@@ -31,7 +31,7 @@ print("===== Error handling system =====")
 car_dict = dict(name="Tayota", year=2026, electric=True)
 
 try:
-    a = car_dict.speed
+    # a = car_dict.speed
     result = car_dict["origin"]
     print("result:", result)
 
@@ -43,3 +43,8 @@ else:   # trydagi hamma mantiq tugri bulsa bajariladi
     print("Executed Succesfully without errors")
 finally:
     print("final closing logic")
+
+    """
+    2 errordan qaysi biri bulsa ham deb shart quysak (KeyError,AttributeError)
+    kabi yoziladi. har qanday error kk bulsa Exeption yoziladi
+    """
